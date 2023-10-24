@@ -1,0 +1,21 @@
+<body>
+  <header><p>Записи</p></header>
+  <div class="list" *ngFor="let dataCulture of dataCultureList">
+    <div class="heading">{{ dataCulture.heading }}</div>
+    <div>
+      Категория: <b>{{ dataCulture.category }}</b>
+    </div>
+    <div>
+      Автор: <b>{{ dataCulture.author }}</b>
+    </div>
+    <div class="content">{{ dataCulture.content }}</div>
+    <div class="button">
+      <button class="arhive" (click)="sendCultureList(dataCulture.heading)">
+        Архив
+      </button>
+      <button class="delete" (click)="deleteCultureList(dataCulture.heading)">
+        Удалить
+      </button>
+    </div>
+  </div>
+</body>

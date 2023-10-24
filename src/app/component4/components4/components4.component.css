@@ -1,0 +1,10 @@
+body {
+  margin-top: 3vw;
+}
+div {
+  box-sizing: border-box;
+  border-top: 3px #707070 solid;
+}
+p {
+  margin-left: 1vw;
+}

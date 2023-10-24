@@ -1,0 +1,49 @@
+<body>
+  <header><p>Создать запись</p></header>
+  <form>
+    <div class="authorForm">
+      <label class="labelAuthor">Автор</label>
+      <input
+        id="authorSetting"
+        type="text"
+        required
+        name="author"
+        [(ngModel)]="myForm.author"
+      />
+    </div>
+    <div class="headingForm">
+      <label class="labelHeading">Заголовок</label>
+      <input
+        id="headingSetting"
+        type="text"
+        required
+        name="heading"
+        [(ngModel)]="myForm.heading"
+      />
+    </div>
+    <div class="categoryForm">
+      <label class="labelCategory">Категория</label>
+      <input
+        id="сategorySetting"
+        type="text"
+        required
+        name="сategory"
+        [(ngModel)]="myForm.category"
+      />
+    </div>
+    <div class="contentForm">
+      <label class="labelСontent">Содержание</label>
+      <textarea
+        id="contentSetting"
+        required
+        name="content"
+        [(ngModel)]="myForm.content"
+      ></textarea>
+    </div>
+    <button type="reset" (click)="addCultureList()">Создать</button>
+  </form>
+  <footer>
+    <div class="arhiveName">Архив</div>
+    <app-arhive-component></app-arhive-component>
+  </footer>
+</body>

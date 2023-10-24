@@ -1,0 +1,14 @@
+p{
+  font: 2.5vw Helvetica;
+  color: white;
+  margin: 1vw 0 0 1vw;
+  font-weight: bold;
+}
+div{
+  display: flex;
+  background-color: #006b09;
+  border-bottom: 4px #07b148 solid;
+  height: 4vw;
+  margin-top: 0;
+  padding-top: 0;
+}
